@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:IteratorApp"
+             x:Class="IteratorApp.MainPage">
+
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <!-- Place new controls here -->
+        <Frame BackgroundColor="#EE99EE"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand">
+            <StackLayout>
+                <Image x:Name="imgPhoto" WidthRequest="80" HeightRequest="80" HorizontalOptions="Center"/>
+                <Label HorizontalOptions="Center"
+                       x:Name="txtDescripcion"/>
+            </StackLayout>
+        </Frame>
+        <Frame>
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Button Text="Primero" x:Name="btnPrimero" Clicked="BtnPrimero_Clicked"/>
+                <Button Text="¿Hay siguiente?" x:Name="btnHasNext" Clicked="BtnHasNext_Clicked"/>
+                <Button Text="Siguiente" x:Name="btnNext" Clicked="BtnNext_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
